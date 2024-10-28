@@ -346,6 +346,19 @@ html, body{
   gap: 15px;
 }
 
+.btn_12 {
+  margin-left: 70px;
+  padding: 10px 20px;
+  background-color: #9000b8;
+  color: rgb(0, 0, 0);
+  text-decoration:none;
+  border-radius: 5px;
+  animation: fadeIn 2s ease;
+  font-weight: 1000;
+  gap: 15px;
+}
+
+
 .btn:hover {
   background-color: #4b006d;
 }
