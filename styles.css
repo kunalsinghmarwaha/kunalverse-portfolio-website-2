@@ -502,6 +502,7 @@ html, body{
 }
 
 .contact {
+  min-height: fit-content;
   height: 100vh; /* Full screen height */
   width: 100vw;  /* Full screen width */
   background-image: url('abc5.jpeg'); 
