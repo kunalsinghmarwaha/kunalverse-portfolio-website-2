@@ -47,20 +47,8 @@ html, body{
   font-size: 3rem;
 }
 
-/* Section Styles */
-.section {
-  scroll-snap-align: start;  /* Aligns each section perfectly */
-  height: 100vh;  /* Full view height for each section */
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transition: background-color 1s;
-}
-
 /* Hero Section */
-#hero_1 {
+.hero_1 {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -71,7 +59,7 @@ html, body{
   background-position: center;
   position: relative;
   align-items: center;
-
+  text-align: center;
   animation: fadeIn 2s ease;
 
 }
@@ -87,26 +75,28 @@ html, body{
 .hero_1-content h1 {
   font-size: 4rem;
   color: white;
-  /* align-items: start; */
-  /* justify-content: left; */
+  align-items: start;
+  justify-content: left;
 }
 
 .hero_1-content p {
   font-size: 1.2rem;
   color: white;
-  /* align-items: start;
-  justify-content: left; */
+  align-items: start;
+  justify-content: left;
 }
 
 /* Styling for the "About Me" Section */
-#about-me {
+.about-me {
   display: flex;
   background-image: url('abc.jpeg'); 
   background-size: cover;
   background-position: center;
   position: relative;
   justify-content: center;
-  max-height: 100vh;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1e1e1e;
   padding: 50px 20px;
 }
 
@@ -116,6 +106,7 @@ html, body{
   background-size: cover;
   background-position: center;
   position: relative;
+  justify-content: space-between;
   width: 80%;
   max-width: 1200px;
 }
@@ -138,6 +129,27 @@ html, body{
   color: #cfa9cf;
 }
 
+.right-content h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.right-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.right-content ul li {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.right-content p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.8;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -151,12 +163,28 @@ html, body{
   }
 }
 
-/* Skill Section Styling
+
+/* Section Styles */
+.section {
+  scroll-snap-align: start;  /* Aligns each section perfectly */
+  height: 100vh;  /* Full view height for each section */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 1s;
+}
+
+
+
+/* Skill Section Styling */
 .skills-container {
   display: flex;
   justify-content: center;
   gap: 30px;
-} */
+}
 
 #skills {
   background-image: url('abc2.jpg'); 
@@ -174,13 +202,13 @@ html, body{
 
 }
 
-#skills p {
+.skills p {
   font-size: 1.25rem;
   font-family:'Times New Roman', Times, serif 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(249, 196, 255);
 }
 
-#skills h3 {
+.skills h3 {
   font-size: 1.35rem;
   font-family:'Times New Roman', Times, serif 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(216, 4, 4);
@@ -224,7 +252,7 @@ html, body{
   margin-bottom: 10px;
 }
 
-#hero {
+.hero {
   background-color: #2c2c2c;
   background-image: url('abc4.jpg'); 
   background-size: cover;
@@ -295,10 +323,11 @@ html, body{
   font-weight: 1000;
   font-size: 4rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
   justify-content: center;
   display: flex;
 
-} 
+}
 
 .calendly {
   color:aqua;
@@ -334,6 +363,19 @@ html, body{
   background-color: #4b006d;
 }
 
+/* Project Card Styling */
+.project-card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
 
 .info h1 {
   font-size: 3rem;
@@ -472,7 +514,7 @@ html, body{
   color: #f39c12;
 }
 
-#contact {
+.contact {
   min-height: fit-content;
   height: 100vh; /* Full screen height */
   width: 100vw;  /* Full screen width */
@@ -493,15 +535,14 @@ html, body{
   display: flex;
   flex-wrap: wrap; /* Allows wrapping on smaller screens */
   justify-content: center;
-  align-items: center; 
+  align-items: center; /* Center child elements vertically */
   width: 100%; 
   max-width: 1200px;
-  gap: 20px; 
+  gap: 20px; /* Adds spacing between elements */
 }
 
 .contact-form {
   background-color: rgb(0, 0, 0);
-  color: white;
   width: 100%;
   max-width: 400px;
   padding: 40px;
@@ -509,6 +550,10 @@ html, body{
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin: 0 auto;
+}
+
+.contact-form {
+  color: white;
 }
 
 .contact-form input[type="text"],
