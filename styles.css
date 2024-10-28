@@ -59,7 +59,7 @@ html, body{
   background-position: center;
   position: relative;
   align-items: center;
-  text-align: center;
+
   animation: fadeIn 2s ease;
 
 }
@@ -75,15 +75,15 @@ html, body{
 .hero_1-content h1 {
   font-size: 4rem;
   color: white;
-  align-items: start;
-  justify-content: left;
+  /* align-items: start; */
+  /* justify-content: left; */
 }
 
 .hero_1-content p {
   font-size: 1.2rem;
   color: white;
-  align-items: start;
-  justify-content: left;
+  /* align-items: start;
+  justify-content: left; */
 }
 
 /* Styling for the "About Me" Section */
@@ -94,9 +94,8 @@ html, body{
   background-position: center;
   position: relative;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   min-height: 100vh;
-  background-color: #1e1e1e;
   padding: 50px 20px;
 }
 
@@ -106,7 +105,7 @@ html, body{
   background-size: cover;
   background-position: center;
   position: relative;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 80%;
   max-width: 1200px;
 }
@@ -129,27 +128,6 @@ html, body{
   color: #cfa9cf;
 }
 
-.right-content h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 22px;
-}
-
-.right-content ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.right-content ul li {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.right-content p {
-  margin-top: 10px;
-  font-size: 18px;
-  line-height: 1.8;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
